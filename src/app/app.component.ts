@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'stats-frontend';
 
-  didNotHitThis() {
-    console.log('This should be uncovered code.');
+  changeTitle() {
+    this.title = 'new title';
   }
 }

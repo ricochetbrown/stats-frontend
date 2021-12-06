@@ -32,4 +32,13 @@ describe('AppComponent', () => {
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('.content span')?.textContent).toContain('stats-frontend app is running!');
   });
+
+  it('should change the title', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+
+    app.changeTitle();
+
+    expect(app.title).toEqual('new title');
+  })
 });
