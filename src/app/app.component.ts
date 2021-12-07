@@ -9,6 +9,7 @@ export class AppComponent {
   title = 'stats-frontend';
 
   changeTitle() {
+    console.log(this.title);
     this.title = 'new title';
   }
 }
